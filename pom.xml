@@ -45,8 +45,6 @@
 
     <modules>
         <module>crawler4j</module>
-        <module>crawler4j-examples/crawler4j-examples-base</module>
-        <module>crawler4j-examples/crawler4j-examples-postgres</module>
     </modules>
 
 </project>
