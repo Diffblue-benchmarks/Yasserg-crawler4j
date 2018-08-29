@@ -4,7 +4,7 @@
         <artifactId>crawler4j-parent</artifactId>
         <groupId>edu.uci.ics</groupId>
         <version>4.5.0-SNAPSHOT</version>
-        <relativePath>../../pom.xml</relativePath>
+        <relativePath>../../crawler4j-parent/pom.xml</relativePath>
     </parent>
     <artifactId>crawler4j-examples-base</artifactId>
     <name>${project.groupId}:${project.artifactId}</name>
@@ -29,5 +29,4 @@
             <version>${guava.version}</version>
         </dependency>
     </dependencies>
-
 </project>
