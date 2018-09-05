@@ -1,0 +1,22 @@
+cbmcArguments:
+  slice-function-calls: org\.slf4j\.Logger.*
+phases:
+-
+  timeout: 60
+  cbmcArguments:
+    java-external-code-action: mock-non-jdk
+    java-test-input-factory: bmc
+    lazy-methods-extra-entry-point: [ '(?!javax?).*<init>.*', '(?!javax?).*\.set[A-Z]\w*' ]
+    java-assume-inputs-non-null: true
+-
+  timeout: 300
+  cbmcArguments:
+    java-external-code-action: mock-non-jdk
+    java-test-input-factory: bmc
+    lazy-methods-extra-entry-point: [ '(?!javax?).*<init>.*', '(?!javax?).*\.set[A-Z]\w*' ]
+-
+  timeout: 600
+  cbmcArguments:
+    java-external-code-action: mock-non-jdk
+    java-test-input-factory: bmc
+    lazy-methods-extra-entry-point: [ '(?!javax?).*<init>.*', '(?!javax?).*\.set[A-Z]\w*' ]
