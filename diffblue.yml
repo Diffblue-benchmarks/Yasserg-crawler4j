@@ -2,25 +2,21 @@ cbmcArguments:
   classpath: '/tools/cbmc/models-simple-overlay.jar:/tools/cbmc/models.jar:.'
   depth: false
   slice-function-calls: org\.slf4j\.Logger.*
-  java-max-vla-length: 33
 phases:
 -
   timeout: 300
   cbmcArguments:
     java-assume-inputs-non-null: true
     max-nondet-array-length: 10
-    max-nondet-string-length: 10
     unwind: 1
 -
   timeout: 300
   cbmcArguments:
     max-nondet-array-length: 20
-    max-nondet-string-length: 100
-    string-printable: false
     unwind: 2
 -
   timeout: 300
   cbmcArguments:
     max-nondet-array-length: 30
     max-nondet-string-length: 10
-    unwind: 2
+    unwind: 3
