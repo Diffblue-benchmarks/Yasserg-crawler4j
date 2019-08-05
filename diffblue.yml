@@ -161,3 +161,22 @@ phases:
       # Add constraint that strings are printable
       string-printable: false
 units:
+ - target:
+   - dir: crawler4j/build/classes/java/main
+     file: edu/uci/ics/crawler4j/util/Util.class
+     sourceDir: crawler4j/src/main/java
+     sourceFile: edu/uci/ics/crawler4j/util/Util.java
+ - target:
+   - dir: crawler4j/build/classes/java/main
+     file: edu/uci/ics/crawler4j/crawler/CrawlConfig.class
+     sourceDir: crawler4j/src/main/java
+     sourceFile: edu/uci/ics/crawler4j/crawler/CrawlConfig.java
+   - dir: crawler4j/build/classes/java/main
+     file: edu/uci/ics/crawler4j/crawler/authentication/AuthInfo.class
+     sourceDir: crawler4j/src/main/java
+     sourceFile: edu/uci/ics/crawler4j/crawler/authentication/AuthInfo.java
+ - target:
+   - dir: crawler4j/build/classes/java/main
+     file: edu/uci/ics/crawler4j/robotstxt/PathRule.class
+     sourceDir: crawler4j/src/main/java
+     sourceFile: edu/uci/ics/crawler4j/robotstxt/PathRule.java
