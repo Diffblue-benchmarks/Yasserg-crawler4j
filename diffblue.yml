@@ -106,6 +106,8 @@ phases:
       java-test-input-factory-bmc-recursion-limit: 4
       # Force float and double inputs to have integer values.
       java-assume-inputs-integral: true
+      # Only initialize numerical primitive-typed parameter within the given range
+      java-assume-inputs-interval: "[2:99]"
   -
     # Phase 3 FIFO Strategy - pretty tests, do not test private methods directly, fifo
     timeout: 100
@@ -128,6 +130,8 @@ phases:
       throw-runtime-exceptions: false
       # Set an upper bound on loop unwinding.
       unwind: false
+      # Only initialize numerical primitive-typed parameter within the given range
+      java-assume-inputs-interval: "[2:99]"
   -
     # Phase 4 Exceptions - do not test private methods directly
     timeout: 180
@@ -144,6 +148,8 @@ phases:
       throw-runtime-exceptions: true
       # Set an upper bound on loop unwinding.
       unwind: 3
+      # Only initialize numerical primitive-typed parameter within the given range
+      java-assume-inputs-interval: "[2:99]"
   -
     # Phase 5 - Sledgehammer 
     timeout: 240
@@ -158,8 +164,12 @@ phases:
       throw-runtime-exceptions: true
       # Set an upper bound on loop unwinding.
       unwind: 16
+      # Only initialize numerical primitive-typed parameter within the given range
+      java-assume-inputs-interval: "[2:99]"
       # Add constraint that strings are printable
       string-printable: false
+      # Only initialize numerical primitive-typed parameter within the given range
+      java-assume-inputs-interval: "[2:99]"
 units:
  - target:
    - dir: crawler4j/build/classes/java/main
