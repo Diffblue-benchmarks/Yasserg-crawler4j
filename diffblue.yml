@@ -1,3 +1,6 @@
+buildCmd: ./gradlew build -x test
+testCmd: true
+skipVerification: true
 # Copyright 2019 Diffblue Limited. All Rights Reserved.
 cbmcArguments:
   # Do not generate coverage comments on generated tests.
